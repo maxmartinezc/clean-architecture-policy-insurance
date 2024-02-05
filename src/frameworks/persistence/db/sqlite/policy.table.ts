@@ -1,0 +1,11 @@
+export const POLICY_TABLE_SQL = `
+CREATE TABLE IF NOT EXISTS policy (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(200) NOT NULL,
+  age INTEGER,
+  smoker INTEGER,
+  sedentary INTEGER,
+  start_date TEXT NOT NULL,
+  price INTEGER
+)
+`;

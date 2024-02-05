@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "ES6",
+      "lib": [
+        "ES2019"
+      ],
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "./dist",
+      "baseUrl": ".",
+      "paths": {
+        "@/adapters/*":[
+            "src/adapters/*"
+        ],
+        "@/use-cases/*":[
+            "src/use-cases/*"
+        ],
+        "@/domain/*":[
+            "src/domain/*"
+        ],
+        "@/frameworks/*":[
+            "src/frameworks/*"
+        ],
+      },
+      "types": ["node"],
+      "typeRoots": [
+        "node_modules/@types"
+      ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

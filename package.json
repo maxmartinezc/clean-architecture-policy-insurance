@@ -1,0 +1,31 @@
+{
+  "name": "clean-architecture",
+  "version": "1.0.0",
+  "description": "Clean Architecture with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build && tsc-alias",
+    "start": "ts-node-dev --respawn -r tsconfig-paths/register ./src/frameworks/webserver/app.ts"
+  },
+  "author": "Max Martinez (https://maxmartinez.dev)",
+  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "clean",
+    "architecture"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.4",
+    "@types/sqlite3": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
